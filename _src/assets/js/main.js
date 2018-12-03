@@ -17,9 +17,7 @@ const probeYourLuck = () => {
     
     if (writeYourNumber.value === randomNumber) {
         getTrack.innerHTML = `Has ganado CAMPEONA!`;
-    } else if (writeYourNumber.value > randomNumber) {
-        getTrack.innerHTML = `${writeYourNumber.value} está lejos del número premiado`;
-    } else if (writeYourNumber.value < randomNumber) {
+    } else if (writeYourNumber.value !== randomNumber) {
         getTrack.innerHTML = `${writeYourNumber.value} está lejos del número premiado`;
     }
 }
