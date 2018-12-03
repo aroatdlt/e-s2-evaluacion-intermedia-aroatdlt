@@ -23,7 +23,7 @@ const probeYourLuck = () => {
 
   const countDown = document.querySelector('.counter');
 
-  for (let i = 0; i < 100; i = i++); {
+  for (let i = 0; i < 20; i = i++); {
     countDown.innerHTML = countDown + i;
   }
 }
