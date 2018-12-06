@@ -3,16 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Juego de azar</title>
+</head>
 
 <body>
-  <h1>Adivina el número</h1>
-  <div class="counter">0</div>
-  <p>Introduce aquí tu número</p>
-  <input type="text" class="choose_number">
-  <button type="submit" class="btn">Prueba</button>
-  <p class="feedback">Escribe un número y dale a Prueba</p>
+  <header>
+    <h1>Adivina el número</h1>
+    <div class="counter">0</div>
+  </header>
+  <main>
+    <form method="get" action="/signup">
+      <label for="number_introduced">Introduce aquí tu número</label>
+      <input type="text" id="number_introduced" class="choose_number" name="Número introducido">
+    </form>
+    <button type="submit" class="btn">Prueba</button>
+    <p class="feedback">Escribe un número y dale a Prueba</p>
+  </main>
   <script type="text/javascript" src="assets/js/main.min.js"></script>
 </body>
 
